@@ -30,7 +30,13 @@
   <h2 class="jump">SPREADS!</h2>
 
 <script>
-  
+  const jump = document.querySelector('.jump');
+  const newHTML = [...jump.innerHTML].map((str) => {
+    return `<span>${str}</span>`;
+  }).join('');
+
+  jump.innerHTML = newHTML;
+
 </script>
 </body>
 </html>
